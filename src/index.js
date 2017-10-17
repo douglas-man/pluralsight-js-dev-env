@@ -1,7 +1,7 @@
 import {getUsers} from './api/userApi'
 
 getUsers().then(result => {
-  let usersBody = "";
+  let usersBody = ''
 
   result.forEach(user => {
     usersBody += `<tr>
@@ -13,6 +13,5 @@ getUsers().then(result => {
     <tr>`
   })
 
-  global.document.getElementById('users').innerHTML = usersBody;
+  global.document.getElementById('users').innerHTML = usersBody
 })
-
